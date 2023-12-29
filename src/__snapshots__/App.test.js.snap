@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App testing checking Snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="App"
+  >
+    <div>
+      <div
+        class="passwordchecker"
+      >
+        <h1>
+          Enter Your Password
+        </h1>
+        <div>
+          <label
+            for="password"
+          />
+          <input
+            data-testid="passwordinput"
+            id="password"
+            type="password"
+            value=""
+          />
+        </div>
+        <div
+          class="btns"
+          data-testid="buttonDiv"
+        >
+          <button>
+            Show Password
+          </button>
+          <button>
+            Clear Password
+          </button>
+        </div>
+      </div>
+      <div
+        class="aboutpass"
+        data-testid="PasswordStrengthDiv"
+        style="color: white; background-color: red;"
+      >
+        Weak Password
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

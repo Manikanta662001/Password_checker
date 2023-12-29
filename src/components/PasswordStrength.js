@@ -10,7 +10,7 @@ function PasswordStrength({password}) {
         let count = 0
         for(let x of list){
             console.log(x)
-            if(x==null || x== false){
+            if(x===null || x=== false){
                 count+=0
             }
             else{
@@ -19,12 +19,12 @@ function PasswordStrength({password}) {
         }
         console.log(count)
 
-        if(count==5 ){
+        if(count===5 ){
             console.log('Uppercase')
             setColor('green')
             setText('Strong Password')
         }
-        else if(count==3 || count==4){
+        else if(count===3 || count===4){
             setColor('orange')
             setText('Moderate Password')
         }
