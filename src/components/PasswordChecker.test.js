@@ -8,26 +8,18 @@ describe("PasswordChecker testing", () => {
   });
   test("initially it will show Show Password button", () => {
     render(<PasswordChecker />);
-    expect(
-      screen.getByRole("button", { name: "Show Password" })
-    ).toBeInTheDocument();
-    expect(
-      screen.getByRole("button", { name: "Clear Password" })
-    ).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: "Show Password" })).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: "Clear Password" })).toBeInTheDocument();
   });
   test("it will show Hide Password button", async () => {
     render(<PasswordChecker />);
     const btn = screen.getByRole("button", { name: "Show Password" });
     fireEvent.click(btn);
-    expect(
-      await screen.getByRole("button", { name: "Hide Password" })
-    ).toBeInTheDocument();
+    expect(await screen.getByRole("button", { name: "Hide Password" })).toBeInTheDocument();
   });
   test("it will reset the Password when we click Clear Password button", () => {
     render(<PasswordChecker />);
-    fireEvent.change(screen.getByTestId("passwordinput"), {
-      target: { value: "hello" },
-    });
+    fireEvent.change(screen.getByTestId("passwordinput"), {target: { value: "hello" },});
     const btn = screen.getByRole("button", { name: "Clear Password" });
     fireEvent.click(btn);
     expect(screen.getByTestId("passwordinput")).toHaveDisplayValue("");
