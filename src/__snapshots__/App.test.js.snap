@@ -33,6 +33,56 @@ exports[`App testing checking Snapshot 1`] = `
           <button>
             Clear Password
           </button>
+          <div
+            class="checkboxes"
+          >
+            <input
+              type="checkbox"
+            />
+            <label>
+              Must contain capital letter
+            </label>
+          </div>
+          <div
+            class="checkboxes"
+          >
+            <input
+              type="checkbox"
+            />
+            <label>
+              Must contain small letter
+            </label>
+          </div>
+          <div
+            class="checkboxes"
+          >
+            <input
+              type="checkbox"
+            />
+            <label>
+              Must contain numbers
+            </label>
+          </div>
+          <div
+            class="checkboxes"
+          >
+            <input
+              type="checkbox"
+            />
+            <label>
+              Must contain Special character
+            </label>
+          </div>
+          <div
+            class="checkboxes"
+          >
+            <input
+              type="checkbox"
+            />
+            <label>
+              length must be greater than or equals to 8
+            </label>
+          </div>
         </div>
       </div>
       <div
