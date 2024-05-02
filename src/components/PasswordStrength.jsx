@@ -5,12 +5,11 @@ function PasswordStrength({password}) {
     const [color,setColor] = useState('')
     const [text,setText] = useState('')
     useEffect(()=>{
-        const list = [password.match(/[A-Z]/g) ,password.match(/[a-z]/g), password.match(/[0-9]/g), password.match(/[$#&_]/g),password.length>=8]
+        const list = [password.match(/[A-Z]/g) ,password.match(/[a-z]/g), password.match(/[0-9]/g), password.match(/[$#&_@%*]/g),password.length>=8]
         console.log(list)
         let count = 0
         for(let x of list){
-            console.log(x)
-            if(x==null || x== false){
+            if(x===null || x=== false){
                 count+=0
             }
             else{
@@ -19,12 +18,12 @@ function PasswordStrength({password}) {
         }
         console.log(count)
 
-        if(count==5 ){
+        if(count===5 ){
             console.log('Uppercase')
             setColor('green')
             setText('Strong Password')
         }
-        else if(count==3 || count==4){
+        else if(count===3 || count===4){
             setColor('orange')
             setText('Moderate Password')
         }
