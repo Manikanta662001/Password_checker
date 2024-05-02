@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Password_checker/static/css/main.191114a3.css",
+    "main.js": "/Password_checker/static/js/main.361c668e.js",
+    "static/js/787.2f1af95e.chunk.js": "/Password_checker/static/js/787.2f1af95e.chunk.js",
+    "index.html": "/Password_checker/index.html",
+    "main.191114a3.css.map": "/Password_checker/static/css/main.191114a3.css.map",
+    "main.361c668e.js.map": "/Password_checker/static/js/main.361c668e.js.map",
+    "787.2f1af95e.chunk.js.map": "/Password_checker/static/js/787.2f1af95e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.191114a3.css",
+    "static/js/main.361c668e.js"
+  ]
+}
